@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DCD9D6;
+}
+
+.heading {
+    padding: 10px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: large;
+    box-shadow: 0 0 0 0;
+    color: #090909;
+    background-color: #464445;
+}
+
+.heading p {
+    font-size: large;
+    color: #090909;
+    font-family: fantasy;
+}
+
+.amount-money{
+    text-align: right;
+    font-family: fantasy;
+    font-size: medium;
+}
+
+.clothing-container{
+    padding-right: 450px;
+    background-color: hsl(20, 1%, 50%);
+    display: grid;
+    overflow: hidden;
+    table-layout: fixed;
+
+}
+
+.img2 p {
+    text-align: center;
+    font-size: medium;
+    font-family: fantasy;
+
+}
+
+.img3 p {
+    text-align: center;
+    font-size: medium;
+    font-family: fantasy;
+
+}
+
+.btn1{
+    background-color: #252525;
+    color: #DCD9D6;
+    border: none;
+    filter: drop-shadow(0 0 30px #333);
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    transition-duration: 1s;
+    
+}
+
+.btn2{
+    background-color: #770000;
+    color: #dcd9d6;
+    border: none;
+    filter: drop-shadow(0 0 30px #4b0101);
+    cursor: pointer;
+    width: 90px;
+    height: 30px;   
+}
+
+.btn1:hover{
+    background-color: #DCD9D6;
+    color: #464445;
+    width: 65px;
+    height: 45px;
+    filter:drop-shadow(0 0 30px #ff0202)
+    
+}
+
+.img2{
+    text-align: center;
+    font-family: fantasy;
+    filter: drop-shadow(0 0 20px #333);
+}
+
+.img3{
+    text-align: center;
+    font-family: fantasy;
+    filter: drop-shadow(0 0 20px #333);
+}
+
+.deposit{
+    text-align: right;
+    font-family: fantasy;
+    font-size: medium;
+}
+
+.dep-btn{
+    background-color: #252525;
+    color: #DCD9D6;
+    border-radius: none;
+    filter: drop-shadow(0 0 30px #333);
+    cursor: pointer;
+    position: absolute;
+    top: 210px;
+    right: 10px;
+    width: 60px;
+    height: 20px;
+}
+
+.contact {
+    padding: 5px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: large;
+    box-shadow: 0 0 0 0;
+    color: #090909;
+    background-color: #464445;
+}
+
+.contact p {
+    font-size: medium;
+    color: #090909;
+    font-family: fantasy;
+}
+
+.confirm{
+    background-color: #252525;
+    color: #DCD9D6;
+    border-radius: none;
+    filter: drop-shadow(0 0 30px #333);
+    cursor: pointer;
+    position: absolute;
+    right: 490px;
+    top: 1670px;
+    width: 70px;
+    height: 20px;
+}
+
+.email{
+    background-color: #252525;
+    color: #DCD9D6;
+}

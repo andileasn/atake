@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>ATAKE</title>
+</head>
+<body>
+
+    <div class="heading">
+        <h1>ATAKE</h1>
+        <p>Arise and Atake</p>
+        <p  id="result" class="amount-money">Aval:$</p>
+        <p class="deposit">deposit: <input type="text" placeholder="Enter amount" id="dp-am"></p>
+        <button class="dep-btn" onclick="deposit()">procced</button>
+    </div>
+
+    <div class="clothing-container">
+        
+        <div class="img2"><h2>Stare Into The Abyss</h2><img src="https://i.pinimg.com/564x/3d/a4/c4/3da4c43680f04b5de327038b65accf85.jpg" height="500" width="500">
+            <p class="img2" id="abyss">$</p><button class="btn1" onclick="buy()">Buy</button></div>
+        <div class="img3"><h2>Galactic Atake XL</h2><img src="https://i.pinimg.com/564x/76/1c/87/761c87a9c2ff2bb7b09231ccd4fba59b.jpg" height="500" width="500">
+         <p class="img3" id="galactic">$</p><button class="btn2">SOLD OUT</button> </div>
+    </div>
+
+    <div class="contact">
+        <h3>contact Info</h3>
+        <p>Email:atake@gmail.com</p>
+        <p>Enter your email so you can be updated on our latest releases</p>
+        <p class="userInfo">Email: <input class="email" type="email" placeholder="example@gmail.com"></p><button class="confirm">confirm</button>
+
+    </div>
+
+    <script>
+        var aval = 50;
+        var aval = parseInt(aval);
+        var abyssHoodie = 45;
+        var abyssHoodie = parseInt(abyssHoodie);
+        var galacticHoodie = 75;
+        var galacticHoodie = parseInt(galacticHoodie);
+        
+        document.getElementById('result').innerHTML = 'Aval:$' + aval;
+        document.getElementById('abyss').innerHTML = '$' + abyssHoodie;
+        document.getElementById('galactic').innerHTML = '$' + galacticHoodie;
+        
+        function buy(){
+
+            if ((aval>= 44)) {
+
+                var result = aval - abyssHoodie;
+                document.getElementById('result').innerHTML = 'Aval:$' + result;
+                aval = result;
+                console.log('approved');
+                alert('approved  '+ "-$"+abyssHoodie);
+            }else{
+                console.log('declined');
+                alert('declined');
+            }
+        }
+
+        function deposit(){
+            var dp = parseInt(document.getElementById('dp-am').value);
+            var resultDeposit = aval + dp;
+            document.getElementById('result').innerHTML = 'Aval:$' + resultDeposit;
+            aval = resultDeposit;
+            var dp = 0;
+            document.getElementById('dp-am').value = dp;
+        }
+    </script>
+
+</body>
+</html>
